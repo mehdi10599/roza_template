@@ -136,7 +136,18 @@ address {
   --E3S-8: #ddcbab;
   --black: #000;
   --white: #fff;
-  --gray-6: #BBBBBB;
+  --Gray-2: #F5F5F5;
+  --Gray-6: #BBBBBB;
+  --Gray-4: #E6E6E6;
+  --Grey-9: #717171;
+  --Grey-10: #4F4F4F;
+  
+  --Gray-1-1: #F1F1F1;
+  --TagDiscount:#DC3D3D;
+  --TagMojudi:#877A05CC;
+  --TagNew:#685ED9CC;
+  --TagTextColor:#F8F8F8;
+  --TagTextColorSecondary:#2C2C2C;
 
   --corner-radius-1: 8px;
   --corner-radius-2: 12px;
@@ -146,46 +157,105 @@ address {
   --corner-radius-6: 64px;
 }
 
+
+
 @font-face {
-  font-family: "iranYekan";
-  src: url("../Fonts/IRANYekanExtraBoldFaNum.ttf");
-  font-weight: 900;
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../Fonts/eot/iranyekanwebboldfanum.eot');
+	src: url('../Fonts/eot/iranyekanwebboldfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../Fonts/woff/iranyekanwebboldfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../Fonts/ttf/iranyekanwebboldfanum.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "iranYekan";
-  src: url("../Fonts/IRANYekanBoldFaNum.ttf");
-  font-weight: 700;
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 100;
+	src: url('../Fonts/eot/iranyekanwebthinfanum.eot');
+	src: url('../Fonts/eot/iranyekanwebthinfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../Fonts/woff/iranyekanwebthinfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../Fonts/ttf/iranyekanwebthinfanum.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "iranYekan";
-  src: url("../Fonts/IRANYekanMediumFaNum.ttf");
-  font-weight: 600;
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../Fonts/eot/iranyekanweblightfanum.eot');
+	src: url('../Fonts/eot/iranyekanweblightfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../Fonts/woff/iranyekanweblightfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../Fonts/ttf/iranyekanweblightfanum.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "iranYekan";
-  src: url("../Fonts/IRANYekanRegularFaNum.ttf");
-  font-weight: 400;
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../Fonts/eot/iranyekanwebregularfanum.eot');
+	src: url('../Fonts/eot/iranyekanwebregularfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../Fonts/woff/iranyekanwebregularfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../Fonts/ttf/iranyekanwebregularfanum.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "iranYekan";
-  src: url("../Fonts/IRANYekanLightFaNum.ttf");
-  font-weight: 300;
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 500;
+	src: url('../Fonts/eot/iranyekanwebmediumfanum.eot');
+	src: url('../Fonts/eot/iranyekanwebmediumfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../Fonts/woff/iranyekanwebmediumfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../Fonts/ttf/iranyekanwebmediumfanum.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "iranYekan";
-  src: url("../Fonts/IRANYekanThinFaNum.ttf");
-  font-weight: 200;
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 800;
+	src: url('../Fonts/eot/iranyekanwebextraboldfanum.eot');
+	src: url('../Fonts/eot/iranyekanwebextraboldfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../Fonts/woff/iranyekanwebextraboldfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../Fonts/ttf/iranyekanwebextraboldfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 850;
+	src: url('../Fonts/eot/iranyekanwebblackfanum.eot');
+	src: url('../Fonts/eot/iranyekanwebblackfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../Fonts/woff/iranyekanwebblackfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../Fonts/ttf/iranyekanwebblackfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 900;
+	src: url('../Fonts/eot/iranyekanwebextrablackfanum.eot');
+	src: url('../Fonts/eot/iranyekanwebextrablackfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../Fonts/woff/iranyekanwebextrablackfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../Fonts/ttf/iranyekanwebextrablackfanum.ttf') format('truetype');
+}
+
+
+
+
+
+@font-face {
+  font-family: adoreSans;
+  src: url('../Fonts/adore-font/Adore.ttf')  format('truetype'),
+  url('../Fonts/woff/iranyekanwebextrablackfanum.woff') format('woff');
+  font-weight: normal;
 }
 
 body * {
-  font-family: "iranYekan";
+  font-family: "iranyekan";
 }
-
+#divMain{
+  background-color: var(--Gray-2);
+}
 .zr-header-top {
   background-color: var(--E3S-8);
   color: var(--black);
@@ -213,7 +283,7 @@ body * {
   font-weight: 400;
   padding: 8px;
   border-radius: 0 8px 0 8px;
-  color: var(--gray-6);
+  color: var(--Gray-6);
   min-width: 100px;
   display: flex;
 }
@@ -334,7 +404,6 @@ body * {
 
 
 .zr-under-header-slider{
-  background-color: yellow;
   width: 100%;
   height: 530px;
   line-height: 100%;
@@ -345,12 +414,10 @@ body * {
   font-size: 40px;
   letter-spacing: 0;
   height: 207px;
-  background-color: aqua;
 }
 .zr-under-header-slider-middle{
   height: 93px;
   align-self: flex-end;
-  background-color: aqua;
 }
 .zr-under-header-slider-content{
   margin: 0 32px;
@@ -376,8 +443,223 @@ body * {
 .zr-under-header-slider-buttons{
   width: 299px;
   height: 156px;
-  background-color: aqua;
 }
 .zr-under-header-slider-bottom{
   height: 279px;
 }
+.zr-under-header-slider-button-top{
+  width: 100%;
+  height: 72px;
+  background-color: var(--E1P-8);
+  color: var(--E3S-8);
+  border-radius: 0 var(--corner-radius-5) 0 var(--corner-radius-5);
+}
+.zr-under-header-slider-button-top svg path{
+  stroke: var(--E3S-8);
+}
+.zr-under-header-slider-button-top span{
+  margin-left: 16px;
+}
+.zr-under-header-slider-button-bottom div span{
+  font-family: "adoreSans" !important;
+}
+.zr-under-header-slider-button-bottom svg *{
+  stroke: var(--E1P-8);
+}
+.zr-under-header-slider-button-bottom svg:nth-of-type(2){
+  transform: rotate(180deg);
+}
+
+
+/* category */
+.zr-category{
+  max-width: 1396px;
+  margin: 24px auto;
+  height: 198px;
+}
+.zr-catergory h3{
+  height: 41px;
+  line-height: 41px;
+  margin-top: 76px;
+  color: var(--black);
+}
+.zr-categor-item{
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.zr-categor-item img{
+  height: 145px;
+  object-fit: cover;
+  border-radius: 0 40px 0 40px;
+}
+.zr-categor-item h4{
+  color: var(--Grey-10);
+  height: 41px;
+  line-height: 41px;
+}
+.zr-line-w100{
+  bottom: 40px;
+  height: 0;
+  width: 100%;
+  border: 1px solid var(--E3S-8);
+}
+.zr-newest-product-top a{
+  width: 152px;
+  height: 41px;
+  border-radius:0 var(--corner-radius-3) 0 var(--corner-radius-3);
+  background-color: var(--Gray-1-1);
+  border: 1px solid var(--Gray-4);
+  line-height: 40px;
+  text-align: center;
+  color: var(--black);
+}
+.zr-newest-product-top a:hover{
+  border: 1px solid var(--E1P-8);
+  background-color: var(--Gray-2);
+  color: var(--E1P-8);
+}
+.zr-newest-product{
+  height: 632px;
+  width: 100%;
+  margin-top: 85px;
+}
+.zr-newest-product-top{
+  height: 41px;
+}
+.zr-newest-product-top h3{
+  line-height: 41px;
+}
+.zr-newest-product-item{
+  width: 323.2px;
+  background-color: var(--white);
+  border-radius: 0 32px 0 32px;
+  overflow: hidden;
+}
+.zr-newest-product-item:hover{
+  outline: 3px solid var(--Gray-6);
+}
+.zr-newest-product-container{
+  height: 632px;
+}
+.zr-newest-item-img{
+  height: 350px;
+}
+.zr-newest-product-item img{
+  width: 100%;
+  height: 350px;
+  border-radius: 0 32px 0 32px ;
+}
+.zr-newest-product-bottom{
+  height: 480px;
+}
+.zr-newest-item-desc h4{
+  color: var(--black);
+  height: 22px;
+  line-height: 22px;
+}
+.zr-newest-item-desc{
+  height: 130px;
+  padding: 10px 0 16px 0;
+}
+.zr-newest-item-price{
+  gap: 8px;
+}
+.zr-newest-item-price span:first-child{
+  text-decoration: line-through;
+  color: var(--Grey-9);
+}
+.zr-newest-item-price span:nth-child(3){
+  color: var(--Grey-9);
+}
+.zr-newest-item-weight{
+  gap: 16px;
+}
+.zr-newest-item-weight span:first-child,.zr-newest-item-weight span:last-child{
+  width: 30px;
+  height: 1px;
+  background-color: var(--black);
+}
+
+.zr-tag{
+  padding: 0 4px;
+  border-radius: 0 4px 0 4px;
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+.zr-discount-tag{
+  height: 30px;
+  top: 12px;
+  left: 12px;
+  background-color: var(--TagDiscount);
+  color: var(--white);
+  line-height: 34px;
+}
+.zr-mojud-tag{
+  height: 25px;
+  bottom: 12px;
+  right: 12px;
+  background-color: var(--TagMojudi);
+  color: var(--white);
+  line-height: 27px;
+}
+.zr-jadid-tag{
+  height: 25px;
+  bottom: 12px;
+  right: 101px;
+  background-color: var(--TagNew);
+  color: var(--white);
+  line-height: 27px;
+}
+.zr-ojrat-tag{
+  height: 25px;
+  bottom: 12px;
+  right: 149px;
+  background-color: var(--white);
+  color: var(--TagTextColorSecondary);
+  line-height: 27px;
+}
+.zr-newest-product {
+  position: relative;
+  z-index: 50;
+}
+.zr-newest-button-bottom {
+  width: 280px;
+  height: 60px;
+  align-self: center;
+}
+.zr-newest-button-bottom span{
+  font-family: "adoreSans" !important;
+  color: var(--black);
+}
+
+.zr-newest-button-bottom svg *{
+  stroke: var(--black);
+}
+.zr-newest-button-bottom svg:last-child{
+  transform: rotate(180deg);
+}
+
+.zr-newest-elipse{
+  width: 1920px;
+  height: 678px;
+  border-radius: 50%;
+  border: 1px solid var(--E3S-8);
+  position: absolute;
+  top: 17px;
+  right: -120px;
+  transform: rotate(-16deg);
+  z-index: -10;
+}
+
+
+
+
+
+
+
+
+
