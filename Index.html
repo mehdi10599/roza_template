@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="Themes/CSS/Website.css" />
     <link rel="stylesheet" href="Themes/CSS/style.css" />
     <!-- js -->
-    <script type="text/javascript" src="Javascript/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="Themes/Js/jquery-1.11.3.min.js"></script>
     <!-- <script type="text/javascript" src="Themes/Js/platform.js"></script>
     <script type="text/javascript" src="Themes/Js/website.js"></script>
     <script type="text/javascript" src="Themes/Js/Persian.js"></script> -->
@@ -86,10 +86,27 @@
             </div>
             <img class="zr-header-logo" src="Themes/Images/roza.png" alt="">
             <div class="zr-header-left sp-d-flex ">
-              <img src="Themes/Images/icons/search-icon.svg">
+
+
+
+
+                <div class="zr-header-search sp-d-flex sp-overflow-hidden">
+                    <img class="zr-header-icons" src="Themes/Images/icons/search-icon.svg">
+                    <input name="search" type="text" placeholder="جستجو در محصولات">
+                </div>
+
+
+
+
+
+
+
+
+
+
               <div class="zr-header-login sp-d-flex sp-justify-evenly sp-relative">
-                <img src="Themes/Images/icons/CaretLeft.svg">
-                <img src="Themes/Images/icons/Profile.svg">
+                <img class="zr-header-icons" src="Themes/Images/icons/CaretLeft.svg">
+                <img class="zr-header-icons" src="Themes/Images/icons/Profile.svg">
                 <div class="zr-login-info sp-absolute sp-d-flex sp-flex-column sp-justify-evenly sp-font-large">
                   <div class="zr-login-info-connector sp-absolute"></div>
                   <a href="#">
@@ -106,10 +123,261 @@
                   </a>
                 </div>
               </div>
-              <div class="zr-header-basket">
-                <img src="Themes/Images/icons/basket.svg">
+              <div class="zr-header-basket sp-relative">
+                <img class="zr-header-icons" src="Themes/Images/icons/basket.svg">
                 <span class="zr-basket-red"></span>
-              </div>
+
+
+                <!-- basket-main -->
+                <div class="zr-header-basket-main sp-absolute ">
+                    
+                    <div class="zr-items-container sp-d-flex sp-flex-column">
+                        <!-- basket-top -->
+                        <div class="zr-basket-top sp-d-flex sp-justify-between">
+                            <div class="sp-d-flex sp-justify-between">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#3D3A36" d="M19.9597 8.95844C19.2897 8.21844 18.2797 7.78844 16.8797 7.63844V6.87844C16.8797 5.50844 16.2997 4.18844 15.2797 3.26844C14.2497 2.32844 12.9097 1.88844 11.5197 2.01844C9.12975 2.24844 7.11975 4.55844 7.11975 7.05844V7.63844C5.71975 7.78844 4.70975 8.21844 4.03975 8.95844C3.06975 10.0384 3.09975 11.4784 3.20975 12.4784L3.90975 18.0484C4.11975 19.9984 4.90975 21.9984 9.20975 21.9984H14.7897C19.0897 21.9984 19.8797 19.9984 20.0897 18.0584L20.7897 12.4684C20.8997 11.4784 20.9197 10.0384 19.9597 8.95844ZM11.6597 3.40844C12.6597 3.31844 13.6097 3.62844 14.3497 4.29844C15.0797 4.95844 15.4897 5.89844 15.4897 6.87844V7.57844H8.50975V7.05844C8.50975 5.27844 9.97975 3.56844 11.6597 3.40844ZM8.41975 13.1484H8.40975C7.85975 13.1484 7.40975 12.6984 7.40975 12.1484C7.40975 11.5984 7.85975 11.1484 8.40975 11.1484C8.96975 11.1484 9.41975 11.5984 9.41975 12.1484C9.41975 12.6984 8.96975 13.1484 8.41975 13.1484ZM15.4197 13.1484H15.4097C14.8597 13.1484 14.4097 12.6984 14.4097 12.1484C14.4097 11.5984 14.8597 11.1484 15.4097 11.1484C15.9697 11.1484 16.4197 11.5984 16.4197 12.1484C16.4197 12.6984 15.9697 13.1484 15.4197 13.1484Z" />
+                                </svg>
+                                <span class="sp-fw-500 sp-font-xlarge">سبد‌خرید</span>
+                                <span class="zr-circle-basket-counter sp-fw-500 sp-font-small">6</span>
+                            </div>
+                            <div class="sp-d-flex sp-justify-between">
+                                <span class="sp-fw-500 sp-font-normal">مهلت خرید:</span>
+                                <span>14:20</span>
+                            </div>
+                        </div>
+
+                        <!-- basket-items -->
+                        <div class="zr-basket-items sp-d-flex sp-flex-column sp-justify-between">
+                            <div class="zr-basket-items-top sp-d-flex ">
+                                <img src="Themes/Images/basket-item.jpg" alt="">
+                                <div class="zr-basket-desc sp-d-flex sp-flex-column sp-flex-around">
+                                    <span class="sp-fw-500 sp-font-large">گوشواره طرح میخک <b class="sp-fw-500">(d12540)</b></span>
+                                    <span class="sp-fw-400 sp-font-normal">وزن :  <b class="sp-fw-400">24</b> گرم</span>
+                                    <span class="sp-fw-400 sp-font-normal">سایز : <b class="sp-fw-400">41</b></span>
+                                    <span class="sp-fw-400 sp-font-normal">رنگ : <b class="sp-fw-400">رزگلد</b></span>
+                                </div>
+                            </div>
+                            <div class="zr-basket-items-bottom sp-d-flex sp-justify-between">
+                                <div class="zr-basket-delete">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="32" height="32" rx="4" fill="#C00000"/>
+                                        <path d="M24.9997 10.7305C24.9797 10.7305 24.9497 10.7305 24.9197 10.7305C19.6297 10.2005 14.3497 10.0005 9.11967 10.5305L7.07967 10.7305C6.65967 10.7705 6.28967 10.4705 6.24967 10.0505C6.20967 9.63046 6.50967 9.27046 6.91967 9.23046L8.95967 9.03046C14.2797 8.49046 19.6697 8.70046 25.0697 9.23046C25.4797 9.27046 25.7797 9.64046 25.7397 10.0505C25.7097 10.4405 25.3797 10.7305 24.9997 10.7305Z" fill="white"/>
+                                        <path d="M12.4998 9.72C12.4598 9.72 12.4198 9.72 12.3698 9.71C11.9698 9.64 11.6898 9.25 11.7598 8.85L11.9798 7.54C12.1398 6.58 12.3598 5.25 14.6898 5.25H17.3098C19.6498 5.25 19.8698 6.63 20.0198 7.55L20.2398 8.85C20.3098 9.26 20.0298 9.65 19.6298 9.71C19.2198 9.78 18.8298 9.5 18.7698 9.1L18.5498 7.8C18.4098 6.93 18.3798 6.76 17.3198 6.76H14.6998C13.6398 6.76 13.6198 6.9 13.4698 7.79L13.2398 9.09C13.1798 9.46 12.8598 9.72 12.4998 9.72Z" fill="white"/>
+                                        <path d="M19.2104 26.7515H12.7904C9.30039 26.7515 9.16039 24.8215 9.05039 23.2615L8.40039 13.1915C8.37039 12.7815 8.69039 12.4215 9.10039 12.3915C9.52039 12.3715 9.87039 12.6815 9.90039 13.0915L10.5504 23.1615C10.6604 24.6815 10.7004 25.2515 12.7904 25.2515H19.2104C21.3104 25.2515 21.3504 24.6815 21.4504 23.1615L22.1004 13.0915C22.1304 12.6815 22.4904 12.3715 22.9004 12.3915C23.3104 12.4215 23.6304 12.7715 23.6004 13.1915L22.9504 23.2615C22.8404 24.8215 22.7004 26.7515 19.2104 26.7515Z" fill="white"/>
+                                        <path d="M17.6601 21.25H14.3301C13.9201 21.25 13.5801 20.91 13.5801 20.5C13.5801 20.09 13.9201 19.75 14.3301 19.75H17.6601C18.0701 19.75 18.4101 20.09 18.4101 20.5C18.4101 20.91 18.0701 21.25 17.6601 21.25Z" fill="white"/>
+                                        <path d="M18.5 17.25H13.5C13.09 17.25 12.75 16.91 12.75 16.5C12.75 16.09 13.09 15.75 13.5 15.75H18.5C18.91 15.75 19.25 16.09 19.25 16.5C19.25 16.91 18.91 17.25 18.5 17.25Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="zr-basket-price">
+                                    <span class="sp-fw-500 sp-font-normal"><b class="sp-fw-700 sp-font-large">15،521،155</b> تومان </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- basket-items -->
+                        <div class="zr-basket-items sp-d-flex sp-flex-column sp-justify-between">
+                            <div class="zr-basket-items-top sp-d-flex ">
+                                <img src="Themes/Images/basket-item.jpg" alt="">
+                                <div class="zr-basket-desc sp-d-flex sp-flex-column sp-flex-around">
+                                    <span class="sp-fw-500 sp-font-large">گوشواره طرح میخک <b class="sp-fw-500">(d12540)</b></span>
+                                    <span class="sp-fw-400 sp-font-normal">وزن :  <b class="sp-fw-400">24</b> گرم</span>
+                                    <span class="sp-fw-400 sp-font-normal">سایز : <b class="sp-fw-400">41</b></span>
+                                    <span class="sp-fw-400 sp-font-normal">رنگ : <b class="sp-fw-400">رزگلد</b></span>
+                                </div>
+                            </div>
+                            <div class="zr-basket-items-bottom sp-d-flex sp-justify-between">
+                                <div class="zr-basket-delete">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="32" height="32" rx="4" fill="#C00000"/>
+                                        <path d="M24.9997 10.7305C24.9797 10.7305 24.9497 10.7305 24.9197 10.7305C19.6297 10.2005 14.3497 10.0005 9.11967 10.5305L7.07967 10.7305C6.65967 10.7705 6.28967 10.4705 6.24967 10.0505C6.20967 9.63046 6.50967 9.27046 6.91967 9.23046L8.95967 9.03046C14.2797 8.49046 19.6697 8.70046 25.0697 9.23046C25.4797 9.27046 25.7797 9.64046 25.7397 10.0505C25.7097 10.4405 25.3797 10.7305 24.9997 10.7305Z" fill="white"/>
+                                        <path d="M12.4998 9.72C12.4598 9.72 12.4198 9.72 12.3698 9.71C11.9698 9.64 11.6898 9.25 11.7598 8.85L11.9798 7.54C12.1398 6.58 12.3598 5.25 14.6898 5.25H17.3098C19.6498 5.25 19.8698 6.63 20.0198 7.55L20.2398 8.85C20.3098 9.26 20.0298 9.65 19.6298 9.71C19.2198 9.78 18.8298 9.5 18.7698 9.1L18.5498 7.8C18.4098 6.93 18.3798 6.76 17.3198 6.76H14.6998C13.6398 6.76 13.6198 6.9 13.4698 7.79L13.2398 9.09C13.1798 9.46 12.8598 9.72 12.4998 9.72Z" fill="white"/>
+                                        <path d="M19.2104 26.7515H12.7904C9.30039 26.7515 9.16039 24.8215 9.05039 23.2615L8.40039 13.1915C8.37039 12.7815 8.69039 12.4215 9.10039 12.3915C9.52039 12.3715 9.87039 12.6815 9.90039 13.0915L10.5504 23.1615C10.6604 24.6815 10.7004 25.2515 12.7904 25.2515H19.2104C21.3104 25.2515 21.3504 24.6815 21.4504 23.1615L22.1004 13.0915C22.1304 12.6815 22.4904 12.3715 22.9004 12.3915C23.3104 12.4215 23.6304 12.7715 23.6004 13.1915L22.9504 23.2615C22.8404 24.8215 22.7004 26.7515 19.2104 26.7515Z" fill="white"/>
+                                        <path d="M17.6601 21.25H14.3301C13.9201 21.25 13.5801 20.91 13.5801 20.5C13.5801 20.09 13.9201 19.75 14.3301 19.75H17.6601C18.0701 19.75 18.4101 20.09 18.4101 20.5C18.4101 20.91 18.0701 21.25 17.6601 21.25Z" fill="white"/>
+                                        <path d="M18.5 17.25H13.5C13.09 17.25 12.75 16.91 12.75 16.5C12.75 16.09 13.09 15.75 13.5 15.75H18.5C18.91 15.75 19.25 16.09 19.25 16.5C19.25 16.91 18.91 17.25 18.5 17.25Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="zr-basket-price">
+                                    <span class="sp-fw-500 sp-font-normal"><b class="sp-fw-700 sp-font-large">15،521،155</b> تومان </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- basket-items -->
+                        <div class="zr-basket-items sp-d-flex sp-flex-column sp-justify-between">
+                            <div class="zr-basket-items-top sp-d-flex ">
+                                <img src="Themes/Images/basket-item.jpg" alt="">
+                                <div class="zr-basket-desc sp-d-flex sp-flex-column sp-flex-around">
+                                    <span class="sp-fw-500 sp-font-large">گوشواره طرح میخک <b class="sp-fw-500">(d12540)</b></span>
+                                    <span class="sp-fw-400 sp-font-normal">وزن :  <b class="sp-fw-400">24</b> گرم</span>
+                                    <span class="sp-fw-400 sp-font-normal">سایز : <b class="sp-fw-400">41</b></span>
+                                    <span class="sp-fw-400 sp-font-normal">رنگ : <b class="sp-fw-400">رزگلد</b></span>
+                                </div>
+                            </div>
+                            <div class="zr-basket-items-bottom sp-d-flex sp-justify-between">
+                                <div class="zr-basket-delete">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="32" height="32" rx="4" fill="#C00000"/>
+                                        <path d="M24.9997 10.7305C24.9797 10.7305 24.9497 10.7305 24.9197 10.7305C19.6297 10.2005 14.3497 10.0005 9.11967 10.5305L7.07967 10.7305C6.65967 10.7705 6.28967 10.4705 6.24967 10.0505C6.20967 9.63046 6.50967 9.27046 6.91967 9.23046L8.95967 9.03046C14.2797 8.49046 19.6697 8.70046 25.0697 9.23046C25.4797 9.27046 25.7797 9.64046 25.7397 10.0505C25.7097 10.4405 25.3797 10.7305 24.9997 10.7305Z" fill="white"/>
+                                        <path d="M12.4998 9.72C12.4598 9.72 12.4198 9.72 12.3698 9.71C11.9698 9.64 11.6898 9.25 11.7598 8.85L11.9798 7.54C12.1398 6.58 12.3598 5.25 14.6898 5.25H17.3098C19.6498 5.25 19.8698 6.63 20.0198 7.55L20.2398 8.85C20.3098 9.26 20.0298 9.65 19.6298 9.71C19.2198 9.78 18.8298 9.5 18.7698 9.1L18.5498 7.8C18.4098 6.93 18.3798 6.76 17.3198 6.76H14.6998C13.6398 6.76 13.6198 6.9 13.4698 7.79L13.2398 9.09C13.1798 9.46 12.8598 9.72 12.4998 9.72Z" fill="white"/>
+                                        <path d="M19.2104 26.7515H12.7904C9.30039 26.7515 9.16039 24.8215 9.05039 23.2615L8.40039 13.1915C8.37039 12.7815 8.69039 12.4215 9.10039 12.3915C9.52039 12.3715 9.87039 12.6815 9.90039 13.0915L10.5504 23.1615C10.6604 24.6815 10.7004 25.2515 12.7904 25.2515H19.2104C21.3104 25.2515 21.3504 24.6815 21.4504 23.1615L22.1004 13.0915C22.1304 12.6815 22.4904 12.3715 22.9004 12.3915C23.3104 12.4215 23.6304 12.7715 23.6004 13.1915L22.9504 23.2615C22.8404 24.8215 22.7004 26.7515 19.2104 26.7515Z" fill="white"/>
+                                        <path d="M17.6601 21.25H14.3301C13.9201 21.25 13.5801 20.91 13.5801 20.5C13.5801 20.09 13.9201 19.75 14.3301 19.75H17.6601C18.0701 19.75 18.4101 20.09 18.4101 20.5C18.4101 20.91 18.0701 21.25 17.6601 21.25Z" fill="white"/>
+                                        <path d="M18.5 17.25H13.5C13.09 17.25 12.75 16.91 12.75 16.5C12.75 16.09 13.09 15.75 13.5 15.75H18.5C18.91 15.75 19.25 16.09 19.25 16.5C19.25 16.91 18.91 17.25 18.5 17.25Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="zr-basket-price">
+                                    <span class="sp-fw-500 sp-font-normal"><b class="sp-fw-700 sp-font-large">15،521،155</b> تومان </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- basket-items -->
+                        <div class="zr-basket-items sp-d-flex sp-flex-column sp-justify-between">
+                            <div class="zr-basket-items-top sp-d-flex ">
+                                <img src="Themes/Images/basket-item.jpg" alt="">
+                                <div class="zr-basket-desc sp-d-flex sp-flex-column sp-flex-around">
+                                    <span class="sp-fw-500 sp-font-large">گوشواره طرح میخک <b class="sp-fw-500">(d12540)</b></span>
+                                    <span class="sp-fw-400 sp-font-normal">وزن :  <b class="sp-fw-400">24</b> گرم</span>
+                                    <span class="sp-fw-400 sp-font-normal">سایز : <b class="sp-fw-400">41</b></span>
+                                    <span class="sp-fw-400 sp-font-normal">رنگ : <b class="sp-fw-400">رزگلد</b></span>
+                                </div>
+                            </div>
+                            <div class="zr-basket-items-bottom sp-d-flex sp-justify-between">
+                                <div class="zr-basket-delete">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="32" height="32" rx="4" fill="#C00000"/>
+                                        <path d="M24.9997 10.7305C24.9797 10.7305 24.9497 10.7305 24.9197 10.7305C19.6297 10.2005 14.3497 10.0005 9.11967 10.5305L7.07967 10.7305C6.65967 10.7705 6.28967 10.4705 6.24967 10.0505C6.20967 9.63046 6.50967 9.27046 6.91967 9.23046L8.95967 9.03046C14.2797 8.49046 19.6697 8.70046 25.0697 9.23046C25.4797 9.27046 25.7797 9.64046 25.7397 10.0505C25.7097 10.4405 25.3797 10.7305 24.9997 10.7305Z" fill="white"/>
+                                        <path d="M12.4998 9.72C12.4598 9.72 12.4198 9.72 12.3698 9.71C11.9698 9.64 11.6898 9.25 11.7598 8.85L11.9798 7.54C12.1398 6.58 12.3598 5.25 14.6898 5.25H17.3098C19.6498 5.25 19.8698 6.63 20.0198 7.55L20.2398 8.85C20.3098 9.26 20.0298 9.65 19.6298 9.71C19.2198 9.78 18.8298 9.5 18.7698 9.1L18.5498 7.8C18.4098 6.93 18.3798 6.76 17.3198 6.76H14.6998C13.6398 6.76 13.6198 6.9 13.4698 7.79L13.2398 9.09C13.1798 9.46 12.8598 9.72 12.4998 9.72Z" fill="white"/>
+                                        <path d="M19.2104 26.7515H12.7904C9.30039 26.7515 9.16039 24.8215 9.05039 23.2615L8.40039 13.1915C8.37039 12.7815 8.69039 12.4215 9.10039 12.3915C9.52039 12.3715 9.87039 12.6815 9.90039 13.0915L10.5504 23.1615C10.6604 24.6815 10.7004 25.2515 12.7904 25.2515H19.2104C21.3104 25.2515 21.3504 24.6815 21.4504 23.1615L22.1004 13.0915C22.1304 12.6815 22.4904 12.3715 22.9004 12.3915C23.3104 12.4215 23.6304 12.7715 23.6004 13.1915L22.9504 23.2615C22.8404 24.8215 22.7004 26.7515 19.2104 26.7515Z" fill="white"/>
+                                        <path d="M17.6601 21.25H14.3301C13.9201 21.25 13.5801 20.91 13.5801 20.5C13.5801 20.09 13.9201 19.75 14.3301 19.75H17.6601C18.0701 19.75 18.4101 20.09 18.4101 20.5C18.4101 20.91 18.0701 21.25 17.6601 21.25Z" fill="white"/>
+                                        <path d="M18.5 17.25H13.5C13.09 17.25 12.75 16.91 12.75 16.5C12.75 16.09 13.09 15.75 13.5 15.75H18.5C18.91 15.75 19.25 16.09 19.25 16.5C19.25 16.91 18.91 17.25 18.5 17.25Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="zr-basket-price">
+                                    <span class="sp-fw-500 sp-font-normal"><b class="sp-fw-700 sp-font-large">15،521،155</b> تومان </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- basket-items -->
+                        <div class="zr-basket-items sp-d-flex sp-flex-column sp-justify-between">
+                            <div class="zr-basket-items-top sp-d-flex ">
+                                <img src="Themes/Images/basket-item.jpg" alt="">
+                                <div class="zr-basket-desc sp-d-flex sp-flex-column sp-flex-around">
+                                    <span class="sp-fw-500 sp-font-large">گوشواره طرح میخک <b class="sp-fw-500">(d12540)</b></span>
+                                    <span class="sp-fw-400 sp-font-normal">وزن :  <b class="sp-fw-400">24</b> گرم</span>
+                                    <span class="sp-fw-400 sp-font-normal">سایز : <b class="sp-fw-400">41</b></span>
+                                    <span class="sp-fw-400 sp-font-normal">رنگ : <b class="sp-fw-400">رزگلد</b></span>
+                                </div>
+                            </div>
+                            <div class="zr-basket-items-bottom sp-d-flex sp-justify-between">
+                                <div class="zr-basket-delete">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="32" height="32" rx="4" fill="#C00000"/>
+                                        <path d="M24.9997 10.7305C24.9797 10.7305 24.9497 10.7305 24.9197 10.7305C19.6297 10.2005 14.3497 10.0005 9.11967 10.5305L7.07967 10.7305C6.65967 10.7705 6.28967 10.4705 6.24967 10.0505C6.20967 9.63046 6.50967 9.27046 6.91967 9.23046L8.95967 9.03046C14.2797 8.49046 19.6697 8.70046 25.0697 9.23046C25.4797 9.27046 25.7797 9.64046 25.7397 10.0505C25.7097 10.4405 25.3797 10.7305 24.9997 10.7305Z" fill="white"/>
+                                        <path d="M12.4998 9.72C12.4598 9.72 12.4198 9.72 12.3698 9.71C11.9698 9.64 11.6898 9.25 11.7598 8.85L11.9798 7.54C12.1398 6.58 12.3598 5.25 14.6898 5.25H17.3098C19.6498 5.25 19.8698 6.63 20.0198 7.55L20.2398 8.85C20.3098 9.26 20.0298 9.65 19.6298 9.71C19.2198 9.78 18.8298 9.5 18.7698 9.1L18.5498 7.8C18.4098 6.93 18.3798 6.76 17.3198 6.76H14.6998C13.6398 6.76 13.6198 6.9 13.4698 7.79L13.2398 9.09C13.1798 9.46 12.8598 9.72 12.4998 9.72Z" fill="white"/>
+                                        <path d="M19.2104 26.7515H12.7904C9.30039 26.7515 9.16039 24.8215 9.05039 23.2615L8.40039 13.1915C8.37039 12.7815 8.69039 12.4215 9.10039 12.3915C9.52039 12.3715 9.87039 12.6815 9.90039 13.0915L10.5504 23.1615C10.6604 24.6815 10.7004 25.2515 12.7904 25.2515H19.2104C21.3104 25.2515 21.3504 24.6815 21.4504 23.1615L22.1004 13.0915C22.1304 12.6815 22.4904 12.3715 22.9004 12.3915C23.3104 12.4215 23.6304 12.7715 23.6004 13.1915L22.9504 23.2615C22.8404 24.8215 22.7004 26.7515 19.2104 26.7515Z" fill="white"/>
+                                        <path d="M17.6601 21.25H14.3301C13.9201 21.25 13.5801 20.91 13.5801 20.5C13.5801 20.09 13.9201 19.75 14.3301 19.75H17.6601C18.0701 19.75 18.4101 20.09 18.4101 20.5C18.4101 20.91 18.0701 21.25 17.6601 21.25Z" fill="white"/>
+                                        <path d="M18.5 17.25H13.5C13.09 17.25 12.75 16.91 12.75 16.5C12.75 16.09 13.09 15.75 13.5 15.75H18.5C18.91 15.75 19.25 16.09 19.25 16.5C19.25 16.91 18.91 17.25 18.5 17.25Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="zr-basket-price">
+                                    <span class="sp-fw-500 sp-font-normal"><b class="sp-fw-700 sp-font-large">15،521،155</b> تومان </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- basket-items -->
+                        <div class="zr-basket-items sp-d-flex sp-flex-column sp-justify-between">
+                            <div class="zr-basket-items-top sp-d-flex ">
+                                <img src="Themes/Images/basket-item.jpg" alt="">
+                                <div class="zr-basket-desc sp-d-flex sp-flex-column sp-flex-around">
+                                    <span class="sp-fw-500 sp-font-large">گوشواره طرح میخک <b class="sp-fw-500">(d12540)</b></span>
+                                    <span class="sp-fw-400 sp-font-normal">وزن :  <b class="sp-fw-400">24</b> گرم</span>
+                                    <span class="sp-fw-400 sp-font-normal">سایز : <b class="sp-fw-400">41</b></span>
+                                    <span class="sp-fw-400 sp-font-normal">رنگ : <b class="sp-fw-400">رزگلد</b></span>
+                                </div>
+                            </div>
+                            <div class="zr-basket-items-bottom sp-d-flex sp-justify-between">
+                                <div class="zr-basket-delete">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="32" height="32" rx="4" fill="#C00000"/>
+                                        <path d="M24.9997 10.7305C24.9797 10.7305 24.9497 10.7305 24.9197 10.7305C19.6297 10.2005 14.3497 10.0005 9.11967 10.5305L7.07967 10.7305C6.65967 10.7705 6.28967 10.4705 6.24967 10.0505C6.20967 9.63046 6.50967 9.27046 6.91967 9.23046L8.95967 9.03046C14.2797 8.49046 19.6697 8.70046 25.0697 9.23046C25.4797 9.27046 25.7797 9.64046 25.7397 10.0505C25.7097 10.4405 25.3797 10.7305 24.9997 10.7305Z" fill="white"/>
+                                        <path d="M12.4998 9.72C12.4598 9.72 12.4198 9.72 12.3698 9.71C11.9698 9.64 11.6898 9.25 11.7598 8.85L11.9798 7.54C12.1398 6.58 12.3598 5.25 14.6898 5.25H17.3098C19.6498 5.25 19.8698 6.63 20.0198 7.55L20.2398 8.85C20.3098 9.26 20.0298 9.65 19.6298 9.71C19.2198 9.78 18.8298 9.5 18.7698 9.1L18.5498 7.8C18.4098 6.93 18.3798 6.76 17.3198 6.76H14.6998C13.6398 6.76 13.6198 6.9 13.4698 7.79L13.2398 9.09C13.1798 9.46 12.8598 9.72 12.4998 9.72Z" fill="white"/>
+                                        <path d="M19.2104 26.7515H12.7904C9.30039 26.7515 9.16039 24.8215 9.05039 23.2615L8.40039 13.1915C8.37039 12.7815 8.69039 12.4215 9.10039 12.3915C9.52039 12.3715 9.87039 12.6815 9.90039 13.0915L10.5504 23.1615C10.6604 24.6815 10.7004 25.2515 12.7904 25.2515H19.2104C21.3104 25.2515 21.3504 24.6815 21.4504 23.1615L22.1004 13.0915C22.1304 12.6815 22.4904 12.3715 22.9004 12.3915C23.3104 12.4215 23.6304 12.7715 23.6004 13.1915L22.9504 23.2615C22.8404 24.8215 22.7004 26.7515 19.2104 26.7515Z" fill="white"/>
+                                        <path d="M17.6601 21.25H14.3301C13.9201 21.25 13.5801 20.91 13.5801 20.5C13.5801 20.09 13.9201 19.75 14.3301 19.75H17.6601C18.0701 19.75 18.4101 20.09 18.4101 20.5C18.4101 20.91 18.0701 21.25 17.6601 21.25Z" fill="white"/>
+                                        <path d="M18.5 17.25H13.5C13.09 17.25 12.75 16.91 12.75 16.5C12.75 16.09 13.09 15.75 13.5 15.75H18.5C18.91 15.75 19.25 16.09 19.25 16.5C19.25 16.91 18.91 17.25 18.5 17.25Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="zr-basket-price">
+                                    <span class="sp-fw-500 sp-font-normal"><b class="sp-fw-700 sp-font-large">15،521،155</b> تومان </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="zr-basket-pay sp-d-flex sp-flex-column">
+                        <ul class="sp-d-flex sp-flex-column">
+                            <li>
+                                <span>جمع کل وزنی</span>
+                                <span><b>3</b> گرم </span>
+                            </li>
+                            <li>
+                                <span>جمع کل سود</span>
+                                <span><b>1,700,000</b> تومان </span>
+                            </li>
+                            <li>
+                                <span>جمع کل تخفیف</span>
+                                <span><b>2,000,000</b> تومان </span>
+                            </li>
+                            <li>
+                                <span>جمع کل مالیات</span>
+                                <span><b>1,000,000 (%5)</b> تومان </span>
+                            </li>
+                            <li>
+                                <div class="zr-basket-total sp-d-flex sp-justify-between">
+                                    <div class="zr-toggle-details">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.0307 8.46927C4.96101 8.39959 4.87829 8.34432 4.78724 8.3066C4.6962 8.26889 4.59862 8.24948 4.50007 8.24948C4.40152 8.24948 4.30394 8.26889 4.2129 8.3066C4.12185 8.34432 4.03913 8.39959 3.96944 8.46927C3.89976 8.53896 3.84449 8.62168 3.80678 8.71273C3.76906 8.80377 3.74965 8.90135 3.74965 8.9999C3.74965 9.09844 3.76906 9.19603 3.80678 9.28707C3.84449 9.37811 3.89976 9.46084 3.96944 9.53052L11.4694 17.0305C11.5391 17.1003 11.6218 17.1556 11.7129 17.1933C11.8039 17.2311 11.9015 17.2505 12.0001 17.2505C12.0986 17.2505 12.1962 17.2311 12.2873 17.1933C12.3783 17.1556 12.461 17.1003 12.5307 17.0305L20.0307 9.53052C20.1714 9.38979 20.2505 9.19892 20.2505 8.9999C20.2505 8.80088 20.1714 8.61 20.0307 8.46927C19.89 8.32854 19.6991 8.24948 19.5001 8.24948C19.301 8.24948 19.1102 8.32854 18.9694 8.46927L12.0001 15.4396L5.0307 8.46927Z" />
+                                        </svg>
+                                    </div>
+                                    <span>جمع کل </span>
+                                </div>
+                                
+                                <span>
+                                    <i>58,875,000,000</i>
+                                    <b>56,000,000,000</b>
+                                     تومان 
+                                </span>
+
+                            </li>
+                        </ul>
+                        <div class="zr-basket-buttons sp-d-flex sp-justify-between">
+                            <a href="#" class="sp-fw-500 sp-font-large">نهایی کردن خرید</a>
+                            <a href="#" class="sp-fw-500 sp-font-large">بستن سبد خرید</a>
+                        </div>
+                        <div class="zr-basket-discount sp-d-flex sp-justify-center">
+                            <span class="sp-fw-500 sp-font-large sp-d-flex sp-justify-between sp-pointer">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.5 23.2513C11.87 23.2513 11.28 23.0114 10.84 22.5614L9.32001 21.0413C9.20001 20.9213 8.88 20.7913 8.72 20.7913H6.56C5.26 20.7913 4.20999 19.7412 4.20999 18.4412V16.2813C4.20999 16.1213 4.07999 15.8014 3.95999 15.6814L2.44 14.1613C2 13.7213 1.75 13.1313 1.75 12.5013C1.75 11.8713 1.99 11.2813 2.44 10.8413L3.95999 9.32125C4.07999 9.20125 4.20999 8.88128 4.20999 8.72128V6.56137C4.20999 5.26137 5.26 4.21127 6.56 4.21127H8.72C8.88 4.21127 9.20001 4.08127 9.32001 3.96127L10.84 2.44125C11.72 1.56125 13.28 1.56125 14.16 2.44125L15.68 3.96127C15.8 4.08127 16.12 4.21127 16.28 4.21127H18.44C19.74 4.21127 20.79 5.26137 20.79 6.56137V8.72128C20.79 8.88128 20.92 9.20125 21.04 9.32125L22.56 10.8413C23 11.2813 23.25 11.8713 23.25 12.5013C23.25 13.1313 23.01 13.7213 22.56 14.1613L21.04 15.6814C20.92 15.8014 20.79 16.1213 20.79 16.2813V18.4412C20.79 19.7412 19.74 20.7913 18.44 20.7913H16.28C16.12 20.7913 15.8 20.9213 15.68 21.0413L14.16 22.5614C13.72 23.0114 13.13 23.2513 12.5 23.2513ZM5.01999 14.6213C5.41999 15.0213 5.70999 15.7213 5.70999 16.2813V18.4412C5.70999 18.9112 6.09 19.2913 6.56 19.2913H8.72C9.28 19.2913 9.98001 19.5813 10.38 19.9813L11.9 21.5013C12.22 21.8213 12.78 21.8213 13.1 21.5013L14.62 19.9813C15.02 19.5813 15.72 19.2913 16.28 19.2913H18.44C18.91 19.2913 19.29 18.9112 19.29 18.4412V16.2813C19.29 15.7213 19.58 15.0213 19.98 14.6213L21.5 13.1013C21.66 12.9413 21.75 12.7313 21.75 12.5013C21.75 12.2713 21.66 12.0613 21.5 11.9013L19.98 10.3813C19.58 9.98131 19.29 9.28128 19.29 8.72128V6.56137C19.29 6.09137 18.91 5.71127 18.44 5.71127H16.28C15.72 5.71127 15.02 5.42133 14.62 5.02133L13.1 3.50131C12.78 3.18131 12.22 3.18131 11.9 3.50131L10.38 5.02133C9.98001 5.42133 9.28 5.71127 8.72 5.71127H6.56C6.09 5.71127 5.70999 6.09137 5.70999 6.56137V8.72128C5.70999 9.28128 5.41999 9.98131 5.01999 10.3813L3.5 11.9013C3.34 12.0613 3.25 12.2713 3.25 12.5013C3.25 12.7313 3.34 12.9413 3.5 13.1013L5.01999 14.6213Z" fill="#3D3A36"/>
+                                    <path d="M15.5002 16.5C14.9402 16.5 14.4902 16.05 14.4902 15.5C14.4902 14.95 14.9402 14.5 15.4902 14.5C16.0402 14.5 16.4902 14.95 16.4902 15.5C16.4902 16.05 16.0502 16.5 15.5002 16.5Z" fill="#3D3A36"/>
+                                    <path d="M9.51001 10.5C8.95001 10.5 8.5 10.05 8.5 9.5C8.5 8.95 8.95 8.5 9.5 8.5C10.05 8.5 10.5 8.95 10.5 9.5C10.5 10.05 10.06 10.5 9.51001 10.5Z" fill="#3D3A36"/>
+                                    <path d="M9.49945 16.2514C9.30945 16.2514 9.11945 16.1815 8.96945 16.0315C8.67945 15.7415 8.67945 15.2614 8.96945 14.9714L14.9695 8.97141C15.2595 8.68141 15.7395 8.68141 16.0295 8.97141C16.3195 9.26141 16.3195 9.74146 16.0295 10.0315L10.0295 16.0315C9.87945 16.1815 9.68945 16.2514 9.49945 16.2514Z" fill="#3D3A36"/>
+                                </svg>
+                                <i>
+                                    ثبت کد تخفیف
+                                </i>
+                            </span>
+                        </div>
+                    </div>
+                                        
+                </div>
+
+
+
+
+
             </div>
           </div>
         </div>
@@ -416,22 +684,35 @@
                             <div>
                                 <img src="Themes/Images/collection-slider.jpg" alt="">
                             </div>
-                            <div class="zr-slider-button sp-d-flex sp-justify-between">
-                                <svg class="sp-pointer" width="84" height="60" viewBox="0 0 84 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="30" cy="30" r="29.5"/>
-                                    <path d="M74.5 22.5L82.5 30.5L75 38" stroke-linecap="round"/>
-                                    <path d="M82.5 30.5L31.5 30.5" stroke-linecap="round"/>
-                                </svg>
+                            <div class="zr-collection-slider-button sp-d-flex sp-justify-between">
+
+                                <div class="zr-slider-btn sp-relative">
+                                    <svg class="zr-slider-arrow sp-absolute" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.9101 20.67C8.7201 20.67 8.5301 20.6 8.3801 20.45C8.0901 20.16 8.0901 19.68 8.3801 19.39L14.9001 12.87C15.3801 12.39 15.3801 11.61 14.9001 11.13L8.3801 4.61002C8.0901 4.32002 8.0901 3.84002 8.3801 3.55002C8.6701 3.26002 9.1501 3.26002 9.4401 3.55002L15.9601 10.07C16.4701 10.58 16.7601 11.27 16.7601 12C16.7601 12.73 16.4801 13.42 15.9601 13.93L9.4401 20.45C9.2901 20.59 9.1001 20.67 8.9101 20.67Z"/>
+                                    </svg>
+                                    <div class="zr-slider-line sp-absolute"></div>
+                                    <div class="zr-slider-circle sp-absolute"></div>
+                                    <div class="zr-slider-circle-black sp-absolute"></div>
+                                </div>
+
+
                                 <div class="sp-font-exlarge sp-fw-400 sp-d-flex sp-center">
                                 <span>02</span>
                                 <span>/</span>
                                 <span>07</span>
                                 </div>
-                                <svg class="sp-pointer" width="84" height="60" viewBox="0 0 84 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="30" cy="30" r="29.5"/>
-                                    <path d="M74.5 22.5L82.5 30.5L75 38" stroke-linecap="round"/>
-                                    <path d="M82.5 30.5L31.5 30.5" stroke-linecap="round"/>
-                                </svg>
+
+
+                                <div class="zr-slider-btn sp-relative">
+                                    <svg class="zr-slider-arrow sp-absolute" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.9101 20.67C8.7201 20.67 8.5301 20.6 8.3801 20.45C8.0901 20.16 8.0901 19.68 8.3801 19.39L14.9001 12.87C15.3801 12.39 15.3801 11.61 14.9001 11.13L8.3801 4.61002C8.0901 4.32002 8.0901 3.84002 8.3801 3.55002C8.6701 3.26002 9.1501 3.26002 9.4401 3.55002L15.9601 10.07C16.4701 10.58 16.7601 11.27 16.7601 12C16.7601 12.73 16.4801 13.42 15.9601 13.93L9.4401 20.45C9.2901 20.59 9.1001 20.67 8.9101 20.67Z"/>
+                                    </svg>
+                                    <div class="zr-slider-line sp-absolute"></div>
+                                    <div class="zr-slider-circle sp-absolute"></div>
+                                    <div class="zr-slider-circle-black sp-absolute"></div>
+                                </div>
+
+                           
                             </div>
                         </div>
                         <div class="zr-collection-slider-left">
@@ -629,21 +910,43 @@
 
               <!-- slider btns -->
               <div class="zr-newest-button-bottom sp-d-flex sp-justify-between">
-                  <svg class="sp-pointer" width="84" height="60" viewBox="0 0 84 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <div class="zr-slider-btn sp-relative">
+                        <svg class="zr-slider-arrow sp-absolute" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.9101 20.67C8.7201 20.67 8.5301 20.6 8.3801 20.45C8.0901 20.16 8.0901 19.68 8.3801 19.39L14.9001 12.87C15.3801 12.39 15.3801 11.61 14.9001 11.13L8.3801 4.61002C8.0901 4.32002 8.0901 3.84002 8.3801 3.55002C8.6701 3.26002 9.1501 3.26002 9.4401 3.55002L15.9601 10.07C16.4701 10.58 16.7601 11.27 16.7601 12C16.7601 12.73 16.4801 13.42 15.9601 13.93L9.4401 20.45C9.2901 20.59 9.1001 20.67 8.9101 20.67Z"/>
+                        </svg>
+                        <div class="zr-slider-line sp-absolute"></div>
+                        <div class="zr-slider-circle sp-absolute"></div>
+                        <div class="zr-slider-circle-black sp-absolute"></div>
+                    </div>
+                  <!-- <svg class="sp-pointer" width="84" height="60" viewBox="0 0 84 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="30" cy="30" r="29.5"/>
                       <path d="M74.5 22.5L82.5 30.5L75 38" stroke-linecap="round"/>
                       <path d="M82.5 30.5L31.5 30.5" stroke-linecap="round"/>
-                  </svg>
+                  </svg> -->
+
+
                   <div class="sp-font-exlarge sp-fw-400 sp-d-flex sp-center">
                       <span>01</span>
                       <span>/</span>
                       <span>03</span>
                   </div>
-                  <svg class="sp-pointer" width="84" height="60" viewBox="0 0 84 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <div class="zr-slider-btn sp-relative">
+                        <svg class="zr-slider-arrow sp-absolute" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.9101 20.67C8.7201 20.67 8.5301 20.6 8.3801 20.45C8.0901 20.16 8.0901 19.68 8.3801 19.39L14.9001 12.87C15.3801 12.39 15.3801 11.61 14.9001 11.13L8.3801 4.61002C8.0901 4.32002 8.0901 3.84002 8.3801 3.55002C8.6701 3.26002 9.1501 3.26002 9.4401 3.55002L15.9601 10.07C16.4701 10.58 16.7601 11.27 16.7601 12C16.7601 12.73 16.4801 13.42 15.9601 13.93L9.4401 20.45C9.2901 20.59 9.1001 20.67 8.9101 20.67Z"/>
+                        </svg>
+                        <div class="zr-slider-line sp-absolute"></div>
+                        <div class="zr-slider-circle sp-absolute"></div>
+                        <div class="zr-slider-circle-black sp-absolute"></div>
+                    </div>
+                  <!-- <svg class="sp-pointer" width="84" height="60" viewBox="0 0 84 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="30" cy="30" r="29.5"/>
                       <path d="M74.5 22.5L82.5 30.5L75 38" stroke-linecap="round"/>
                       <path d="M82.5 30.5L31.5 30.5" stroke-linecap="round"/>
-                  </svg>
+                  </svg> -->
+
+
               </div>
               <div class="zr-article-ellipse"></div>
 
@@ -807,5 +1110,7 @@
 
 
     </footer>
+    
+    <script type="text/javascript" src="Themes/Js/script.js"></script>
   </body>
 </html>
