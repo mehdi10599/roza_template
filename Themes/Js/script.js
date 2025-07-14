@@ -1,5 +1,7 @@
     $(document).ready(function() {
-
+        // alert('hello')
+        let w = window.innerWidth;
+        // alert('width :'+w);
         // toggle basket
         $(".zr-header-basket-main").hide();
         $(".zr-header-basket").on("click", function() {
@@ -29,7 +31,8 @@
 
         //hamber menu
         $(".zr-hamber-menu-icon,.zr-hamber-menu-close").on("click",function(e){
-            $(".zr-hamer-container-fixed ,.zr-hamber-menu-icon,.zr-hamber-menu-close").toggleClass("zr-collapse");
+            $(".zr-hamer-container-fixed ,.zr-hamber-menu-icon").toggleClass("zr-collapse");
+            $(".zr-hamber-menu-close").toggleClass("zr-active");
         });
         
         //mahsoolat
