@@ -53,5 +53,25 @@
         });
         
 
+        //slider main
+        let sliderSrcs=[];
+        $(".mainslider").each(function(index){
+            sliderSrcs.push($(this).attr('src'));
+        });
+        console.log(sliderSrcs);
+        let length = sliderSrcs.length;
+        setInterval(function(){
+            $.when($(".mainslider").fadeOut(800)).then(function() {
+                let first = sliderSrcs[0];
+                sliderSrcs.shift();
+                sliderSrcs.push(first);
+                console.log(sliderSrcs);
+                for (let i = 0; i < sliderSrcs.length; i++) {
+                    $(".mainslider").eq(i).attr('src', sliderSrcs[i]);
+                }
+                $(".mainslider").fadeIn(800);
+            });
+        },5000);
+
 
     });
